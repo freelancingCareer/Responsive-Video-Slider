@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Video slider</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- start section area -->
+        <section>
+            <div class="bannerVideo" id="slideShow">
+                <video src="videos/video1.mp4" autoplay muted loop class="active"></video>
+                <video src="videos/video2.mp4" autoplay muted loop></video>
+                <video src="videos/video3.mp4" autoplay muted loop></video>
+                <video src="videos/video4.mp4" autoplay muted loop></video>
+            </div>
+            <div class="container">
+                <header id="navbar">
+                    <a href="#" class="logo">Nature</a>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <span class="menuIcon" onclick="toggleMenu();"></span>
+                </header>
+                <!-- <i class="fas fa-times"></i> -->
+
+                <div class="content">
+                    <div class="bannerText" id="slideShowText">
+                        <div class="active">
+                            <h2>Finland</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem officia quos earum odit quod voluptas, mollitia dolorem quis quas impedit expedita placeat, ducimus tempora quisquam, unde sapiente laudantium fugit.</p>
+                        </div>
+                        <div>
+                            <h2>Bangladesh</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem officia quos earum odit quod voluptas, mollitia dolorem quis quas impedit expedita placeat, ducimus tempora quisquam, unde sapiente laudantium fugit.</p>
+                        </div>
+                        <div>
+                            <h2>Ireland</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem officia quos earum odit quod voluptas, mollitia dolorem quis quas impedit expedita placeat, ducimus tempora quisquam, unde sapiente laudantium fugit.</p>
+                        </div>
+                        <div>
+                            <h2>America</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem officia quos earum odit quod voluptas, mollitia dolorem quis quas impedit expedita placeat, ducimus tempora quisquam, unde sapiente laudantium fugit.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <ul class="control">
+                    <li><i class="fas fa-angle-left" onclick="prevSlide();prevSlideText()" ></i></li>
+                    <li><i class="fas fa-angle-right" onclick="nextSlide();nextSlideText();" ></i></li>
+                </ul>
+
+
+            </div>
+        </section>
+        <!-- end section area -->
+
+        <script src="index.js"></script>
+    </body>
+</html>
